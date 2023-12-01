@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-screen">
+            <h1>Recycling Adventure</h1>
+            <p id="game-instructions">Drag and drop the items into the correct bins!</p>
+
+            <div id="recycle-bins">
+                <div class="recycle-bin" id="plastic-bin" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="recycle-bin" id="paper-bin" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="recycle-bin" id="metal-bin" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+
+            <div id="game-items">
+                <div class="game-item" id="bottle" draggable="true" ondragstart="drag(event)"></div>
+                <div class="game-item" id="newspaper" draggable="true" ondragstart="drag(event)"></div>
+                <div class="game-item" id="can" draggable="true" ondragstart="drag(event)"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
